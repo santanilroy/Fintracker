@@ -43,7 +43,7 @@ const Navbar = () => {
       >
         <span className="bg-red-400 h-full w-full absolute top-80 left-0 group-hover:top-0 duration-300"></span>
         <span className="text-[12] sm:text-[14px] tracking-widest relative z-10">
-          GET STARTED FREE
+          <Link href={"/login"}>GET STARTED FREE</Link>
         </span>
       </motion.button>
     </motion.div>

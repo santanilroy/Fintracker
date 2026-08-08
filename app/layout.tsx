@@ -3,6 +3,7 @@ import { Roboto, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import SmoothScroll from "@/components/SmoothScroll";
+import { Providers } from "@/app/Provider";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -31,8 +32,13 @@ export default function RootLayout({
       lang="en"
       className={cn(geist.variable, roboto.variable, "antialiased")}
     >
-      <body className="min-h-full flex flex-col">
-        <SmoothScroll>{children}</SmoothScroll>
+      <body
+        className="min-h-full flex flex-col"
+        suppressHydrationWarning={true}
+      >
+        <Providers>
+          <SmoothScroll>{children}</SmoothScroll>
+        </Providers>
       </body>
     </html>
   );
