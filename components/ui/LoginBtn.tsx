@@ -16,7 +16,7 @@ export default function AuthButton() {
         onClick={() => signOut()}
         className="w-full p-2 rounded-md bg-neutral-700 text-neutral-50 font-roboto tracking-wider cursor-pointer"
       >
-        sing out
+        Sign out
       </motion.button>
     );
   }

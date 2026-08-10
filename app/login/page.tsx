@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import LoginBtn from "@/components/ui/LoginBtn";
+import GoogleBtn from "@/components/ui/GoogleBtn";
 
 const page = () => {
   return (
@@ -22,7 +23,7 @@ const page = () => {
             Create your account
           </h3>
           <p className="text-neutral-500 text-[13px] text-center font-roboto tracking-wide">
-            Welcome! Please fill in the details to get stated
+            Welcome! Please fill in the details to get started
           </p>
 
           <form className="flex flex-col gap-4 mt-5 w-80 mx-auto">
@@ -68,13 +69,7 @@ const page = () => {
                 Login
               </Link>
             </p>
-            <motion.button
-              whileHover={{ scale: 0.95 }}
-              whileTap={{ scale: 1 }}
-              className="w-full p-2 rounded-md bg-neutral-700 text-neutral-50 font-roboto tracking-wider cursor-pointer"
-            >
-              Continue with Google
-            </motion.button>
+            <GoogleBtn />
             <LoginBtn />
           </form>
         </motion.div>
