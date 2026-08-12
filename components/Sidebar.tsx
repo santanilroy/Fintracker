@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="w-64 h-full fixed text-neutral-800 p-4 border-r border-neutral-300 dark:border-neutral-700 dark:bg-neutral-950 bg-gray-100">
-        <div className="text-[15px] text-neutral-50  font-roboto tracking-normal bg-neutral-900 w-28 flex justify-center items-center py-2 rounded-md">
+        <div className="text-[15px] text-neutral-50 dark:text-neutral-100  font-roboto tracking-normal bg-neutral-900 dark:bg-neutral-300 w-28 flex justify-center items-center py-2 rounded-md">
           Fintracker
           <span className="text-red-600 text-sm font-bold">.</span>
         </div>
