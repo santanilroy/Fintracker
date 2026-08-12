@@ -32,10 +32,7 @@ export default function RootLayout({
       lang="en"
       className={cn(geist.variable, roboto.variable, "antialiased")}
     >
-      <body
-        className="min-h-full flex flex-col"
-        suppressHydrationWarning={true}
-      >
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Providers>
           <SmoothScroll>{children}</SmoothScroll>
         </Providers>
