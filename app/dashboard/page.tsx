@@ -54,21 +54,21 @@ export default async function DashboardPage() {
             />
           </div>
         </div>
-        <div className="p-4 grid grid-cols-4 grid-rows-2 gap-4">
-          <div className="flex flex-col border rounded-lg p-6 gap-4 bg-white dark:bg-neutral-950 dark:border-gray-700 border-neutral-300 h-50">
-            <h2 className="text-xl font-semibold font-roboto">Total Income</h2>
+        <div className="p-8 grid grid-cols-4 grid-rows-2 gap-8">
+          <div className="flex flex-col border rounded-lg p-6 gap-4 bg-gray-100 dark:bg-neutral-950 dark:border-neutral-700 border-neutral-300 h-50">
+            <h2 className="text-xl font-roboto">Total Income</h2>
             <p className="text-4xl font-bold font-roboto text-green-600">
               ₹{totalIncome}
             </p>
           </div>
-          <div className="flex flex-col border rounded-lg p-6 gap-4 bg-white dark:bg-neutral-950 dark:border-gray-700 border-neutral-300 h-50">
-            <h2 className="text-xl font-semibold font-roboto">Total Expense</h2>
+          <div className="flex flex-col border rounded-lg p-6 gap-4 bg-gray-100 dark:bg-neutral-950 dark:border-neutral-700 border-neutral-300 h-50">
+            <h2 className="text-xl font-roboto">Total Expense</h2>
             <p className="text-4xl font-bold font-roboto text-red-600">
               ₹{totalExpense}
             </p>
           </div>
-          <div className="flex flex-col border rounded-lg p-6 gap-4 bg-white dark:bg-neutral-950 dark:border-gray-700  border-neutral-300 h-50">
-            <h2 className="text-xl font-semibold font-roboto">Net Balance</h2>
+          <div className="flex flex-col border rounded-lg p-6 gap-4 bg-gray-100 dark:bg-neutral-950 dark:border-neutral-700 border-neutral-300 h-50">
+            <h2 className="text-xl font-roboto">Net Balance</h2>
             <p className="text-4xl font-bold font-roboto text-blue-600">
               ₹{totalIncome - totalExpense}
             </p>
