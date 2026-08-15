@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import SmoothScroll from "@/components/SmoothScroll";
 import { Providers } from "@/app/Provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -73,6 +74,7 @@ export default function RootLayout({
         <Providers>
           <SmoothScroll>{children}</SmoothScroll>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
