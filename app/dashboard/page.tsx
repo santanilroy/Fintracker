@@ -84,7 +84,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="flex min-h-screen bg-gray-200 dark:bg-neutral-950 duration-300">
-      <div className="flex-1 ml-64 dark:bg-neutral-950">
+      <div className="flex-1 mt-15 md:mt-0 ml-0 md:ml-64 dark:bg-neutral-950">
         <div className="relative p-4">
           <h1 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 font-roboto">
             Overview
@@ -103,7 +103,7 @@ export default async function DashboardPage() {
             />
           </div>
         </div>
-        <div className="px-8 py-2 grid grid-cols-3 grid-rows-1 gap-8">
+        <div className="px-8 py-2 grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-8">
           <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-950 h-40">
             <div className="flex flex-col justify-center gap-10">
               <h2 className="font-roboto font-medium text-neutral-500">
