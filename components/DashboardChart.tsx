@@ -29,7 +29,7 @@ export function CategoryBreakdown({
 }) {
   if (data.length === 0) {
     return (
-      <p className="text-neutral-500 font-roboto text-sm py-4 text-center">
+      <p className="text-neutral-500 font-roboto text-sm py-12 text-center">
         No expenses yet — add a transaction to see your breakdown.
       </p>
     );
