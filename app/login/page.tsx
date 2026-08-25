@@ -2,10 +2,29 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import LoginBtn from "@/components/ui/LoginBtn";
 import GoogleBtn from "@/components/ui/GoogleBtn";
 
-const page = () => {
+const SignUppage = () => {
+  const { status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "authenticated") {
+      router.replace("/dashboard");
+    }
+  }, [status, router]);
+
+  if (status === "loading" || status === "authenticated") {
+    return (
+      <div className="bg-neutral-900 min-h-screen flex justify-center items-center">
+        <p className="text-neutral-500 font-roboto text-sm">Loading...</p>
+      </div>
+    );
+  }
   return (
     <>
       <div className="bg-neutral-900 min-h-screen flex justify-center items-center">
@@ -78,4 +97,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SignUppage;
