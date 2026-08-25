@@ -51,7 +51,7 @@ const Hero = () => {
               y: -10,
             }}
             whileTap={{ scale: 0.89 }}
-            className="bg-neutral-100 text-[10px] sm:text-[14px] w-40 sm:w-60 h-12 tracking-widest rounded-full perspective-1000 transform-style-preserve-3d cursor-pointer z-20"
+            className="bg-neutral-100 text-[10px] text-black sm:text-[14px] w-40 sm:w-60 h-12 tracking-widest rounded-full perspective-1000 transform-style-preserve-3d cursor-pointer z-20"
             style={{
               perspective: 1000,
             }}
