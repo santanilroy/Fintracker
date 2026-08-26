@@ -37,7 +37,7 @@ export default function AddTransactionForm() {
         formRef.current?.reset();
         setCategory("");
       }}
-      className="flex flex-col gap-6 bg-neutral-50 dark:bg-neutral-900 border dark:border-neutral-800 rounded-2xl p-6 w-full max-w-md"
+      className="flex flex-col gap-6 bg-neutral-50 dark:bg-neutral-900 border dark:border-neutral-800 rounded-2xl p-6 w-80 md:w-full max-w-md"
     >
       {/* Income / Expense segmented toggle */}
       <div className="relative flex bg-neutral-100 dark:bg-neutral-950 border dark:border-neutral-800 rounded-xl p-1">

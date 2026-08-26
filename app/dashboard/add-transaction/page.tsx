@@ -8,7 +8,7 @@ export default async function AddTransactionPage() {
   if (!session?.user) redirect("/login");
 
   return (
-    <div className="p-8 min-h-screen bg-gray-100 dark:bg-neutral-950 ml-64">
+    <div className="p-8 min-h-screen bg-gray-100 dark:bg-neutral-950 md:ml-64 mt-15 md:mt-0">
       <h1 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
         Add Transaction
       </h1>
