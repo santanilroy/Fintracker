@@ -8,7 +8,6 @@ import {
   LayoutDashboardIcon,
   UserCircle,
   PlusCircle,
-  PieChart,
   Info,
   LogOut,
   Menu,
@@ -23,7 +22,7 @@ const navItems = [
     label: "Add Transaction",
     icon: PlusCircle,
   },
-  { href: "/dashboard/analytics", label: "Analytics", icon: PieChart },
+  { href: "/dashboard/help", label: "Help center", icon: Info },
 ];
 
 const Sidebar = () => {
@@ -70,16 +69,6 @@ const Sidebar = () => {
       </ul>
 
       <ul className="mt-45 space-y-4 text-[13px] font-roboto tracking-wide text-neutral-600 dark:text-neutral-100">
-        <li className={`cursor-pointer ${linkClasses("/dashboard/help")}`}>
-          <Info />
-          <Link
-            href="/dashboard/help"
-            onClick={() => setOpen(false)}
-            className="text-lg"
-          >
-            Help center
-          </Link>
-        </li>
         <li className="py-2 px-4 rounded-xl flex gap-5 items-center hover:bg-red-300 hover:text-red-500 duration-300 cursor-pointer">
           <LogOut />
           <button
