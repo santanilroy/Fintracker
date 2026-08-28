@@ -23,7 +23,7 @@ export default async function ProfilePage() {
         Your account details
       </p>
 
-      <div className="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm max-w-md flex flex-col items-center gap-4">
+      <div className="bg-white dark:bg-neutral-900 rounded-xl p-6 shadow-sm max-w-md flex flex-col items-center gap-4">
         {session.user.image && (
           <Image
             src={session.user.image}
