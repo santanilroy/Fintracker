@@ -104,7 +104,7 @@ export default async function DashboardPage() {
           </div>
         </div>
         <div className="px-8 py-2 grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-8">
-          <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-950 h-40">
+          <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-900 h-40">
             <div className="flex flex-col justify-center gap-10">
               <h2 className="font-roboto font-medium text-neutral-500">
                 Total Income
@@ -120,7 +120,7 @@ export default async function DashboardPage() {
               <MoveUpRight />
             </div>
           </div>
-          <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-950 h-40">
+          <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-900 h-40">
             <div className="flex flex-col justify-center gap-10">
               <h2 className="font-roboto font-medium text-neutral-500">
                 Total expense
@@ -136,7 +136,7 @@ export default async function DashboardPage() {
               <MoveDownLeft />
             </div>
           </div>
-          <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-950 h-40">
+          <div className="flex rounded-lg p-6 justify-between bg-neutral-50 dark:bg-neutral-900 h-40">
             <div className="flex flex-col justify-center gap-10">
               <h2 className="font-roboto font-medium text-neutral-500">
                 Net balance
@@ -154,14 +154,14 @@ export default async function DashboardPage() {
           </div>
         </div>
         <div className="px-8 py-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="rounded-lg p-6 bg-neutral-50 dark:bg-neutral-950">
+          <div className="rounded-lg p-6 bg-neutral-50 dark:bg-neutral-900">
             <h2 className="font-roboto font-medium text-neutral-500 mb-2">
               Spending by category
             </h2>
             <CategoryBreakdown data={categoryData} />
           </div>
 
-          <div className="rounded-lg p-6 bg-neutral-50 dark:bg-neutral-950">
+          <div className="rounded-lg p-6 bg-neutral-50 dark:bg-neutral-900">
             <h2 className="font-roboto font-medium text-neutral-500 mb-2">
               Last 14 days
             </h2>
