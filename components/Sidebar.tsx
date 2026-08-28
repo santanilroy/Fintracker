@@ -100,7 +100,7 @@ const Sidebar = () => {
       </div>
 
       {/* Desktop fixed sidebar */}
-      <div className="hidden md:block w-64 h-full fixed text-neutral-800 p-4 border-r border-neutral-300 dark:border-neutral-700 dark:bg-neutral-950 bg-gray-100">
+      <div className="hidden md:block w-64 h-full fixed text-neutral-800 p-4 border-r border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 bg-gray-100">
         {SidebarContent}
       </div>
 
